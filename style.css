@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font-family: 'comic sans ms';
+    text-align: center;
+
+}
+.container{
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.containerr{
+    background-color: #8D72E1;
+    width: 1366px;
+    margin: auto;
+    height: 50px;
+}
+.container form input{
+    width: 700px;
+    align-items: center;
+    height: 30px;
+}
+.content form{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.content form input{
+    font-family: 'comic sans ms';
+
+}
+.content ul{
+    list-style: none;
+    font-family: 'comic sans ms';
+    font-size: 30px;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+.content ul li{
+    margin-left: 20px;
+}
+.content form input{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #B9E0FF;
+}
+.container form button{
+    width: 100px;
+    height: 34px;
+    border-radius: 13px;
+    background-color: #4649FF;
+}
+.container form button:hover{
+    background-color: blue;
+}
+.content{
+    width: 100%;
+    height: 700px;
+    background-color: #8D9EFF;
+}
+form button p{
+    font-family: 'comic sans ms';
+    color: aliceblue;
+}
+ul li button{
+    margin-right: 150px;
+    position: absolute;
+    right: 0;
+    height: 30px;
+    width: 80px;
+    border-radius: 15px;
+    font-family: 'comic sans ms';
+}
+ul li button:hover{
+    background-color: #ABD9FF;
+}
+
+
+
+
+
+

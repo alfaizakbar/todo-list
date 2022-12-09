@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo list</title>
+</head>
+<body>
+    <div class="containerr">
+    <h1>React To Do List🔥</h1>
+</div>
+    <div class="container">
+        
+        <div class="content">
+        <form>
+            <input class="lampuuu" type="text">
+            <button class="lampuuu" type="submit"><p>Tambah</p></button>
+        </form>
+            <ul class="lampuu"></ul>
+        </div>
+    </div>
+
+    <script>
+        let al = document.querySelector("form");
+        al.addEventListener('submit', function(event){
+            event.preventDefault();
+            let afdal = document.querySelector("input").value;
+
+            if(afdal == ""){
+                alert("KOSONG MASS");
+            }  else {
+                rian(afdal);
+            }
+            
+            document.querySelector("input").value = "";
+            
+           
+        });
+
+        function rian(afdal){
+            let arul = document.createElement('li');
+            arul.textContent = afdal;
+        
+            const ari =document.createElement('button');
+
+            
+
+            ari.textContent = "Hapus";
+            ari.addEventListener("click",function(){
+                deltodo(this);
+            });
+
+            arul.appendChild(ari);
+
+            arul.addEventListener('click',function(){
+               if  (arul.style.textDecoration=="line-through"){
+                arul.style.textDecoration="none";
+               } else {
+                arul.style.textDecoration="line-through"
+               }
+            });
+
+        let azmi = document.querySelector('ul');
+        azmi.appendChild(arul);
+        function deltodo(todo){
+            const li = todo.parentNode;
+            li.remove();
+        }
+
+        
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>
